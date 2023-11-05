@@ -15,9 +15,9 @@ public class BookShelf {
         }
 
         int currentShelf = 0;
-        for(String book : books){
+        for (String book : books) {
             shelves.get(currentShelf).add(book);
-            currentShelf = (currentShelf +1) % 5;
+            currentShelf = (currentShelf + 1) % 5;
         }
         return shelves;
     }
